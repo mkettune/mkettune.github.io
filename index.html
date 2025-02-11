@@ -1,1 +1,266 @@
-Hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markus Kettunen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-section">
+    <div class="header-content">
+      <img src="profile.jpg" alt="Markus Kettunen" class="profile-img">
+      <div class="header-text">
+        <h1>Markus Kettunen</h1>
+        <p class="title">Computer Graphics Researcher at NVIDIA</p>
+        <p class="contact-info">
+          📧 <a href="mailto:">mkettunen (at) nvidia.com</a><br>
+          <img src="pics/social-x-logo.svg" alt="X Logo" class="social-link"> <a href="https://x.com/nmkettunen" class="social-link">@nmkettunen</a><br>
+          <img src="pics/social-orcid-logo.svg" alt="ORCID Logo" class="social-link"> <a href="https://orcid.org/0000-0002-5206-9603" class="social-link">0000-0002-5206-9603</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        I'm a Senior Research Scientist at NVIDIA based in Helsinki, Finland. My goal is to enable real-time rendering of all 3D graphics at the highest quality, regardless of the complexity of light interactions. I leverage and invent advanced mathematics and statistical theory. I hold a Ph.D. in Computer Science from Aalto University and an M.Sc. in Applied Mathematics from the University of Helsinki.
+      </p>
+    </section>
+    <section id="publications">
+      <h2>Publications and Courses</h2>
+    
+      <!-- 2024 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-arearestir.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Area ReSTIR: Resampling for Real-Time Defocus and Antialiasing</h3>
+          <p class="pub-authors">Song Zhang*, Daqi Lin*, Markus Kettunen, Cem Yuksel, Chris Wyman</p>
+          <p class="pub-venue"><b>SIGGRAPH 2024</b> | ACM Transactions on Graphics, 43(4), Jul 2024</p>
+          <p class="pub-notes">*: Equal contribution</p>
+          
+          <div class="pub-links">
+            <a href="https://research.nvidia.com/labs/rtr/publication/zhang2024area/" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/3658210" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-restirmcmc.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Decorrelating ReSTIR samplers via MCMC Mutations</h3>
+          <p class="pub-authors">Rohan Sawhney, Daqi Lin, Markus Kettunen, Benedikt Bitterli, Ravi Ramamoorthi, Chris Wyman, Matt Pharr</p>
+          <p class="pub-venue"><b>ToG (Jan 2024)</b> | <b>SIGGRAPH 2024</b> | ACM Transactions on Graphics, 43(1), Jan 2024</p>
+          <div class="pub-links">
+            <a href="https://research.nvidia.com/publication/2024-07_decorrelating-restir-samplers-mcmc-mutations" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/3629166" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-cris.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Conditional Resampled Importance Sampling and ReSTIR</h3>
+          <p class="pub-authors">Markus Kettunen*, Daqi Lin*, Ravi Ramamoorthi, Thomas Bashford-Rogers, Chris Wyman</p>
+          <p class="pub-venue"><b>SIGGRAPH Asia 2023</b> | SIGGRAPH Asia 2023 Conference Papers, Dec 2023</p>
+          <p class="pub-notes">*: Equal contribution</p>
+          <div class="pub-links">
+            <a href="https://research.nvidia.com/labs/rtr/publication/kettunen2023conditional/" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/3610548.3618245" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-gentle.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>A Gentle Introduction to ReSTIR: Path Reuse in Real-Time</h3>
+          <p class="pub-authors">Chris Wyman, Markus Kettunen, Daqi Lin, Benedikt Bitterli, Cem Yuksel, Wojciech Jarosz, Pawel Kozlowski, Giovanni De Francesco</p>
+          <p class="pub-venue"><b>SIGGRAPH 2023 Course</b> | ACM SIGGRAPH 2023 Courses, Jul 2023</p>
+          <div class="pub-links">
+            <a href="https://intro-to-restir.cwyman.org/" class="pub-link">Project Page</a>
+            <a href="https://intro-to-restir.cwyman.org/presentations/2023ReSTIR_Course_Notes.pdf" class="pub-link">Course Notes</a>
+            <a href="https://doi.org/10.1145/3587423.3595511" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-restirpt.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Generalized Resampled Importance Sampling: Foundations of ReSTIR</h3>
+          <p class="pub-authors">Daqi Lin*, Markus Kettunen*, Benedikt Bitterli, Jacopo Pantaleoni, Cem Yuksel, Chris Wyman</p>
+          <p class="pub-venue"><b>SIGGRAPH 2022</b> | ACM Transactions on Graphics, 41(4), Jul 2022</p>
+          <p class="pub-notes">*: Equal contribution</p>
+          <div class="pub-links">
+            <a href="https://research.nvidia.com/publication/2022-07_generalized-resampled-importance-sampling-foundations-restir" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/3528223.3530158" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2021 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-restirgi.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3><a href="" class="pub-title">ReSTIR GI: Path Resampling for Real-Time Path Tracing</a></h3>
+          <p class="pub-authors">Yaobin Ouyang, Shiqiu Liu, Markus Kettunen, Matt Pharr, Jacopo Pantaleoni</p>
+          <p class="pub-venue"><b>HPG 2021</b> | Computer Graphics Forum, 40(8), Nov 2021</p>
+          <div class="pub-links">
+            <a href="https://research.nvidia.com/publication/2021-06_restir-gi-path-resampling-real-time-path-tracing" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1111/cgf.14378" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-urm.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>An Unbiased Ray-Marching Transmittance Estimator</h3>
+          <p class="pub-authors">Markus Kettunen, Eugene D'Eon, Jacopo Pantaleoni, Jan Novák</p>
+          <p class="pub-venue"><b>SIGGRAPH 2021</b> | ACM Transactions on Graphics, 40(4), Jul 2021</p>
+          <div class="pub-links">
+            <a href="https://research.nvidia.com/publication/2021-06_unbiased-ray-marching-transmittance-estimator" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/3450626.3459937" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2020 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-thesis.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Gradient-Domain Methods for Realistic Image Synthesis</h3>
+          <p class="pub-authors">Markus Kettunen</p>
+          <p class="pub-venue">PhD Thesis, Aalto University, Feb 2020</p>
+          <p class="pub-award">🏆 Aalto University Dissertation Award (Top 10%)</p>
+          <div class="pub-links">
+            <a href="papers/kettunen-dissertation.pdf" class="pub-link">Download</a>
+            <a href="https://urn.fi/URN:ISBN:978-952-60-8908-9" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- 2019 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-ngpt.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Deep Convolutional Reconstruction for Gradient-Domain Rendering</h3>
+          <p class="pub-authors">Markus Kettunen, Erik Härkönen, Jaakko Lehtinen</p>
+          <p class="pub-venue"><b>SIGGRAPH 2019</b> | ACM Transactions on Graphics, 38(4), Jul 2019</p>
+          <div class="pub-links">
+            <a href="https://github.com/mkettune/ngpt" class="pub-link">GitHub</a>
+            <a href="https://doi.org/10.1145/3306346.3323038" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-elpips.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>E-LPIPS: Robust Perceptual Image Similarity via Random Transformation Ensembles</h3>
+          <p class="pub-authors">Markus Kettunen, Erik Härkönen, Jaakko Lehtinen</p>
+          <p class="pub-venue">eprint arxiv: 1906.03973, Jun 2019</p>
+          <div class="pub-links">
+            <a href="https://github.com/mkettune/elpips" class="pub-link">GitHub</a>
+            <a href="https://doi.org/10.48550/arXiv.1906.03973" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2016 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-tgpt.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Temporal Gradient-Domain Path Tracing</h3>
+          <p class="pub-authors">Marco Manzi*, Markus Kettunen*, Frédo Durand, Matthias Zwicker, Jaakko Lehtinen</p>
+          <p class="pub-venue"><b>SIGGRAPH 2016</b> | ACM Transactions on Graphics, 35(6), Dec 2016</p>
+          <p class="pub-notes">*: Equal contribution</p>
+          <div class="pub-links">
+            <a href="https://www.cs.umd.edu/~zwicker/projectpages/TemporalGradientPathTracing-TOG16.html" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/2980179.2980256" class="pub-link">DOI</a>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- 2015 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-gpt.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Gradient-Domain Path Tracing</h3>
+          <p class="pub-authors">Markus Kettunen, Marco Manzi, Miika Aittala, Jaakko Lehtinen, Frédo Durand, Matthias Zwicker</p>
+          <p class="pub-venue"><b>SIGGRAPH 2015</b> | ACM Transactions on Graphics, 34(4), Jul 2015</p>
+          <div class="pub-links">
+            <a href="https://mediatech.aalto.fi/publications/graphics/GPT/" class="pub-link">Project Page</a>
+            <a href="https://doi.org/10.1145/2766997" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-gbdpt.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Gradient-Domain Bidirectional Path Tracing</h3>
+          <p class="pub-authors">Marco Manzi, Markus Kettunen, Miika Aittala, Jaakko Lehtinen, Frédo Durand, Matthias Zwicker</p>
+          <p class="pub-venue"><b>EGSR 2015</b> | Proc. Eurographics Symposium on Rendering 2015 (EI&amp;I Track), Jun 2015</p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.2312/sre.20151168" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2014 Publications -->
+      <div class="publication-card">
+        <div class="publication-img-container">
+          <img src="pics/paper-improved-sampling.png" alt="Publication Image" class="publication-img">
+        </div>
+        <div class="publication-content">
+          <h3>Improved Sampling for Gradient-Domain Metropolis Light Transport</h3>
+          <p class="pub-authors">Marco Manzi, Fabrice Rousselle, Markus Kettunen, Jaakko Lehtinen, Matthias Zwicker</p>
+          <p class="pub-venue"><b>SIGGRAPH Asia 2014</b> | ACM Transactions on Graphics, 33(6), Nov 2014</p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1145/2661229.2661291" class="pub-link">DOI</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <!-- Footer intentionally left blank -->
+  </footer>
+</body>
+</html>

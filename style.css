@@ -1,0 +1,230 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.header-section {
+  position: relative;
+  background: url('top-background2.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.contact-info {
+  font-size: 0.95em;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 2px 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.contact-info a {
+  color: #9AC5F4;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.content-section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-size: 0.95em;
+}
+
+h2 {
+  color: #3B82F6;
+  border-bottom: 2px solid #9AC5F4;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.year-group h3 {
+  color: #3B82F6;
+  border-bottom: 1px solid #9AC5F4;
+  margin: 30px 0 15px;
+  font-size: 1.6em;
+}
+
+.publication-card {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.publication-img-container {
+  flex: 0 0 200px; /* Do not grow or shrink; fixed width of 200px */
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;        /* Establish a positioning context */
+}
+
+.publication-img {
+  position: absolute;        /* Remove from document flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* Scale while preserving aspect ratio */
+  transition: transform 0.3s ease;
+}
+.publication-img-container:hover .publication-img {
+  transform: scale(1.1); /* Scales the image up to 105% when hovered */
+}
+
+.publication-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.publication-content h3 {
+  margin: 0;
+  font-size: 1.22em;
+  color: #2E3B88;
+}
+
+/* Style for publication titles as links, keeping the old look */
+.pub-title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pub-title:hover {
+  text-decoration: none;
+}
+
+.pub-authors {
+  margin: 3px 0 0px;
+  font-style: normal;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.pub-venue {
+  margin: 4px 0 2px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* New styles for publication notes and awards */
+.pub-notes {
+  margin: 2px 0 2px;
+  font-size: 0.9em;
+  font-style: italic;
+  color: #777;
+}
+
+.pub-award {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #2E3B55;
+  font-weight: bold;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;   /* Allows links to wrap on smaller screens */
+  gap: 10px;         /* Consistent spacing between links */
+  margin-top: 5px;
+}
+
+.pub-link {
+  display: inline-block;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 12px;               /* Rounded corners */
+  padding: 1px 10px;                 /* Space inside the card */
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #2E3BCC;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);  /* Subtle drop shadow */
+  transition: background-color 0.1s ease, color 0.2s ease;
+}
+
+.pub-link:hover {
+  background-color: #2E3BCC;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-section {
+    padding: 40px 15px;
+  }
+  .header-text h1 {
+    font-size: 2em;
+  }
+  .profile-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+img.social-link {
+  width: auto;  /* Adjust this value as needed */
+  height: 0.95em;
+  vertical-align: middle;
+}
